@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Mania</title>
+</head>
+<body>
+    <h1>Pizza Mania</h1>
+    <fieldset>
+        <legend>Pizza Order Here</legend>
+
+        <form action="" method="post">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="First Name"> <br><br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email"><br><br>
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact" placeholder="Contact"><br><br>
+            <label for="deliverydate">Preferred Delivery Date:</label>
+            <input type="date" id="deliverydate" name="deliverydate"><br><br>
+            <label>Size:</label>
+            <input type="radio" id="small" name="size" value="small">
+            <label for="small">Small</label>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large</label>
+            <br><br>
+            <label for="outlet"><highlight>Outlet:</highlight></label>
+            <select id="outlet" name="outlet">
+                <option value="">Select Outlet</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="bangalore">Bangalore</option>
+            </select><br><br>
+
+            <h1>Menu</h1>
+            <table cellpadding="10" cellspacing="10">
+                <tr>
+                    <th>Image</th>
+                    <th>Pizza</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td><img src="https://www.dominos.co.in/files/items/Margherita.jpg" alt="Margherita Pizza" width="100"></td>
+                    <td><input type="checkbox" id="margherita" name="menu" value="margherita"><label for="margherita"> Hawaiian (150.00 &#8377; <del>170.00 &#8377;</del>) </label></td>
+                    <td><select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.dominos.co.in/files/items/Pepperoni.jpg" alt="Pepperoni Pizza" width="100"></td>
+                    <td><input type="checkbox" id="pepperoni" name="menu" value="pepperoni"><label for="pepperoni"> Pepperoni (180.00 &#8377; <del>200.00 &#8377;</del>) </label></td>
+                    <td><select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3CradialGradient id='g' cx='50%25' cy='45%25' r='55%25'%3E%3Cstop offset='0%25' stop-color='%23f0bb68'/%3E%3Cstop offset='100%25' stop-color='%23aa5a23'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='46' fill='url(%23g)'/%3E%3Ccircle cx='27' cy='34' r='8' fill='%23713d1d'/%3E%3Ccircle cx='58' cy='26' r='10' fill='%23713d1d'/%3E%3Ccircle cx='69' cy='55' r='9' fill='%23713d1d'/%3E%3Ccircle cx='38' cy='63' r='11' fill='%23713d1d'/%3E%3Cpath d='M18 48c16-12 28-8 42 2' stroke='%2396b53d' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M35 77c14-10 22-10 38-4' stroke='%2396b53d' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="BBQ Chicken Pizza" width="100"></td>
+                    <td><input type="checkbox" id="bbqchicken" name="menu" value="bbqchicken"><label for="bbqchicken"> BBQ Chicken (200.00 &#8377; <del>220.00 &#8377;</del>) </label></td>
+                    <td><select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.dominos.co.in/files/items/Peppy_Paneer.jpg" alt="Paneer Makhani Pizza" width="100"></td>
+                    <td><input type="checkbox" id="paneermakhani" name="menu" value="paneermakhani"><label for="paneermakhani"> Paneer Makhani (170.00 &#8377; <del>190.00 &#8377;</del>) </label></td>
+                    <td><select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                </tr>
+            </table>
+
+            <h1>Extra Details</h1>
+            <table cellpadding="10" cellspacing="10">
+                <tr>
+                    <td>💳</td>
+                    <td><label for="card">Credit Card:</label></td>
+                    <td><input type="text" id="card" name="card" placeholder="1234 5678 9012 3456"></td>
+                    <td><input type="button" value="Verify Card"></td>
+                </tr>
+                <tr>
+                    <td>📍</td>
+                    <td><label for="pin">Pin:</label></td>
+                    <td><input type="text" id="pin" name="pin" placeholder="620000"></td>
+                </tr>
+                <tr>
+                    <td>🖼️</td>
+                    <td><label for="photo">Upload photo for license:</label></td>
+                    <td><input type="file" id="photo" name="photo"></td>
+                </tr>
+                <tr>
+                    <td>📝</td>
+                    <td><label for="note">Additional Note:</label></td>
+                    <td><textarea id="note" name="note" rows="4" cols="25" placeholder="If any additional requirement then please write here"></textarea></td>
+                </tr>
+                <tr>
+                    <td>⭐</td>
+                    <td><label for="rating">Rating:</label></td>
+                    <td><input type="range" id="rating" name="rating" min="1" max="5"></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Submit Order">
+        </form>
+    </fieldset>
+</body>
+</html>
