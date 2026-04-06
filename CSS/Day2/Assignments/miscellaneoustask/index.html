@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>React.dev Navbar Clone</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #23272f;
+    color: #f3f4f6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #23272f;
+    padding: 14px 24px;
+    border-bottom: 1px solid #313843;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex: 1;
+}
+
+.logo {
+    color: #61dafb;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.version {
+    color: #9ca3af;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.search-box {
+    position: relative;
+    flex: 1;
+    max-width: 560px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 88px 12px 44px;
+    border-radius: 999px;
+    border: none;
+    outline: none;
+    background-color: #2f3540;
+    color: #f3f4f6;
+    font-size: 15px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 1px #3a414d;
+}
+
+.search-box i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+.shortcut {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+.shortcut span {
+    background-color: #3a414d;
+    padding: 4px 8px;
+    border-radius: 8px;
+    letter-spacing: 0.02em;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.menu div {
+    color: #f3f4f6;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu i {
+    color: #f3f4f6;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu div:hover,
+.menu i:hover {
+    color: #61dafb;
+}
+
+.hero {
+    min-height: calc(100vh - 74px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px 80px;
+    box-sizing: border-box;
+}
+
+.hero-logo {
+    font-size: 112px;
+    color: #61dafb;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.hero p {
+    margin: 18px 0 28px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #f3f4f6;
+    max-width: 900px;
+    line-height: 1.25;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn {
+    padding: 13px 28px;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #3b4250;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #58c4dc;
+    color: #1f2937;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #f3f4f6;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+    }
+
+    .left,
+    .menu,
+    .actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero p {
+        font-size: 22px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="left">
+        <div class="logo">
+            <i class="fa-brands fa-react"></i>
+            <span class="version">v19.2</span>
+        </div>
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search">
+            <span class="shortcut">
+                <span>Ctrl</span>
+                <span>+K</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div>Learn</div>
+        <div>Reference</div>
+        <div>Community</div>
+        <div>Blog</div>
+        <i class="fa-regular fa-sun"></i>
+        <i class="fa-solid fa-language"></i>
+        <i class="fa-brands fa-github"></i>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-logo">
+        <i class="fa-brands fa-react"></i>
+    </div>
+    <h1>React</h1>
+    <p>The library for web and native user interfaces</p>
+    <div class="actions">
+        <button class="btn btn-primary">Learn React</button>
+        <button class="btn btn-secondary">API Reference</button>
+    </div>
+</section>
+
+</body>
+</html>

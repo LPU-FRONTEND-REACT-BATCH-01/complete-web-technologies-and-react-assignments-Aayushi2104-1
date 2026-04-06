@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Box</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .box{
+            width: 300px;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px;
+            text-align: left; 
+        }
+
+        .box p::first-letter{
+            color: purple;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        
+        .box p{
+            color: black;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+      
+        .box:hover p{
+            text-align: center; 
+            color: grey;
+            letter-spacing: 2px;
+        }
+
+        .box:hover h1{
+            text-align: center;
+            text-decoration: underline;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <p>The only way to do great work is to love what you do.</p>
+        <h1>- Steve Jobs</h1>
+    </div>
+
+</body>
+</html>
