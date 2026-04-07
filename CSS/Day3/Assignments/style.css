@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: #24272f;
+}
+nav{
+    background-color: #24272f;
+    width: 100%;
+    height: 74px;
+    border-bottom: 1px solid #313843;
+}
+.container{
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    gap: 28px;
+}
+.logo-version{
+    flex: 0 0 auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #61dafb;
+}
+.logo-version i{
+    font-size: 26px;
+}
+.logo-version p{
+    color: #b8c0cc;
+    font-size: 14px;
+    font-weight: 600;
+}
+.search-bar{
+    flex: 1;
+    max-width: 940px;
+    height: 44px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #353b47;
+    border-radius: 999px;
+    color: #9ca3af;
+    padding: 0 18px;
+    gap: 14px;
+}
+.search-icon{
+    color: #9ca3af;
+    font-size: 16px;
+}
+.search-text{
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+.shortcut{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.shortcut div{
+    color: #d5d9df;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #24272f;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+.menu-items{
+    flex: 0 0 auto;
+    height: 54px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    color: #f3f4f6;
+    font-size: 15px;
+    font-weight: 600;
+}
+.icons{
+    flex: 0 0 auto;
+    height: 54px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    color: #f3f4f6;
+    font-size: 18px;
+}
+.menu-items li,
+.icons li{
+    cursor: pointer;
+}
+.menu-items li:hover,
+.icons li:hover{
+    color: #61dafb;
+}
+
+@media (max-width: 1024px){
+    nav{
+        height: auto;
+        padding: 16px 0;
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 20px;
+        gap: 16px;
+    }
+    .logo-version{
+        width: 100%;
+        justify-content: center;
+    }
+    .search-bar{
+        order: 3;
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .menu-items{
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icons{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        padding: 0 16px;
+        gap: 14px;
+    }
+    .search-bar{
+        height: 40px;
+        padding: 0 14px;
+    }
+    .search-text{
+        font-size: 13px;
+    }
+    .menu-items{
+        width: 100%;
+        gap: 18px;
+        font-size: 14px;
+    }
+    .icons{
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px){
+    nav{
+        padding: 12px 0;
+    }
+    .container{
+        padding: 0 12px;
+        gap: 12px;
+    }
+    .logo-version i{
+        font-size: 22px;
+    }
+    .logo-version p{
+        font-size: 13px;
+    }
+    .search-bar{
+        height: 38px;
+        gap: 10px;
+        padding: 0 12px;
+    }
+    .search-icon{
+        font-size: 14px;
+    }
+    .search-text{
+        font-size: 12px;
+    }
+    .shortcut div{
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+    .menu-items{
+        gap: 14px;
+        font-size: 13px;
+    }
+    .icons{
+        gap: 14px;
+        font-size: 16px;
+    }
+}
