@@ -1,4 +1,4 @@
-let arr=[12,"hello",true,undefined];
+// let arr=[12,"hello",true,undefined];
 console.log(arr);
 arr.push(21)
 console.log(arr);
@@ -41,6 +41,27 @@ let carData =[
         },0)
 
         console.log(total_ammount);
-        
+  let arr =["hello","world","javascript"];      
+ arr.map((value,index)=>{
+    console.log(value,index);
+ })
+
+ let arr3=[1,2,3,4,5];
+ let result=arr3.reduce((prev,value)=>{
+    return prev+value
+ },0)
+
+ console.log(result);
+ let arr4=[1,23,63,25,73,5]
+arr4.sort((a,b)=>a-b)
+arr4.sort((a,b)=>b-a)
+console.log(arr4);
+
+//filter array
+let arr5=[1,2,3,4,5,6,7,8,9,10]
+let filterarr=arr5.filter((value)=>{
+    return value>20
+})
+console.log(filterarr);
 
 
