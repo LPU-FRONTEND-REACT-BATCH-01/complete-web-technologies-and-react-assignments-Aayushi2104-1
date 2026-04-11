@@ -149,6 +149,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+    flex-wrap: nowrap;
 }
 
 .btn {
@@ -158,6 +159,7 @@ body {
     font-weight: 700;
     border: 1px solid #3b4250;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .btn-primary {
@@ -179,8 +181,7 @@ body {
     }
 
     .left,
-    .menu,
-    .actions {
+    .menu {
         flex-wrap: wrap;
         justify-content: center;
     }
